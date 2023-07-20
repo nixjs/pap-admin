@@ -45,12 +45,6 @@
       "type": "string",
       "required": false
     },
-    "tags": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::tag.tag",
-      "inversedBy": "products"
-    },
     "rating": {
       "type": "integer"
     },
@@ -59,8 +53,17 @@
       "relation": "oneToMany",
       "target": "api::category.category"
     },
-    "image_url": {
-      "type": "text"
+    "imageURL": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "products"
+    },
+    "specification": {
+      "type": "richtext"
     }
   }
 }

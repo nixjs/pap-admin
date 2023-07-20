@@ -25,6 +25,7 @@ export default {
       // 'tr',
       // 'uk',
       "vi",
+      "en",
       // 'zh-Hans',
       // 'zh',
     ],

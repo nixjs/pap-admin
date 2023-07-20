@@ -30,6 +30,14 @@
       "relation": "manyToMany",
       "target": "api::product.product",
       "mappedBy": "tags"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "publish",
+        "draft"
+      ],
+      "default": "draft"
     }
   }
 }
